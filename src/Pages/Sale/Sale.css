@@ -1,0 +1,247 @@
+.sale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 3rem 0rem;
+  gap: 2rem;
+}
+.sale-h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+.text_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.img-div-sale {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+.sale-img {
+  max-width: 23%;
+  object-fit: contain;
+}
+.bottom-sale {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-top: 4rem;
+}
+.left-sale {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.left-sale img {
+  max-width: 50%;
+  object-fit: contain;
+}
+.right-sale {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+}
+.top-right,
+.warning {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+}
+.warning {
+  align-items: flex-start;
+}
+.top-right p {
+  margin-top: 10px;
+}
+.top-right p,
+.top-right h2 {
+  text-transform: uppercase;
+}
+.address {
+  color: black;
+  background-color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.address-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.copy {
+  padding: 0.6rem 2rem;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid #9c8133;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.copy:hover {
+  background-color: #9c8133;
+}
+.list-items {
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.list .list-items:nth-child(1) {
+  color: white;
+}
+.list .list-items:nth-child(2) {
+  color: #01c30a;
+}
+.list .list-items:nth-child(3) {
+  color: #e300d6;
+}
+.list .list-items:nth-child(4) {
+  color: #8d9dff;
+}
+.list .list-items:nth-child(5) {
+  color: #eeda3a;
+}
+.red {
+  color: red;
+  font-size: 1.5rem;
+}
+.warn-last {
+  font-size: 1.2rem;
+  width: 97%;
+  text-align: left;
+  margin-top: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .address-div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .copy {
+    align-self: flex-start;
+  }
+}
+@media screen and (max-width: 894px) {
+  .address {
+    font-size: 0.8rem;
+  }
+  .red {
+    font-size: 1.2rem;
+  }
+  .warn-last {
+    font-size: 1rem;
+    width: 97%;
+  }
+  .sale-h1 {
+    font-size: 2.5rem;
+  }
+  .sale-img {
+    max-width: 25%;
+  }
+  .list .list-items:nth-child(6) {
+    word-wrap: break-word;
+    font-size: 1.1rem;
+    text-align: left;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 685px) {
+  .bottom-sale {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .copy {
+    align-self: center;
+  }
+  .left-sale {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    order: 2;
+  }
+  .left-sale img {
+    max-width: 60%;
+  }
+  .right-sale {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-right {
+    align-items: center;
+    text-align: center;
+  }
+  .warning {
+    text-align: center;
+    align-items: center;
+  }
+  .warn-last {
+    width: 90%;
+    text-align: center;
+  }
+  .list {
+    align-items: center;
+  }
+  .list .list-items:nth-child(6) {
+    word-wrap: break-word;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 588px) {
+  .list .list-items:nth-child(6) {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .sale-h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 488px) {
+  .address {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 441px) {
+  .sale-h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 80%;
+  }
+  .top-right h2 {
+    font-size: 1.4rem;
+  }
+  .top-right {
+    padding-inline: 0.25rem;
+  }
+}
+@media screen and (max-width: 388px) {
+  .top-right h2 {
+    font-size: 1.25rem;
+  }
+}

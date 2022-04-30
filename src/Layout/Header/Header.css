@@ -1,0 +1,157 @@
+.header {
+  width: 100%;
+  height: 115px;
+  background-color: #12122c;
+  border-bottom: 4px solid #9c8133;
+  overflow-y: hidden;
+  overflow-x: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline: 5rem;
+  overflow-y: hidden;
+  overflow-x: visible;
+}
+@media screen and (min-width: 1500px) {
+  .head-cont {
+    max-width: 1500px;
+  }
+}
+
+.header * {
+  overflow-x: visible;
+  overflow-y: visible;
+}
+.logo {
+  max-width: 100%;
+  object-fit: contain;
+}
+.logo-cont {
+  max-width: 150px;
+}
+.right-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 2rem;
+}
+.nav-links {
+  color: lightgray;
+  font-size: 1.4rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.social {
+  font-size: 1.6rem;
+}
+.fa-discord {
+  color: #7289da;
+}
+.fa-instagram {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fa-twitter {
+  color: #1da1f2;
+}
+.mobile {
+  display: none;
+}
+.social-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .hea-cont {
+    padding-inline: 1rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .head-cont {
+    padding-inline: 1.5rem;
+  }
+  .fa-bars {
+    font-size: 1.6rem;
+    color: white;
+    overflow: visible !important;
+  }
+  .mobile {
+    display: block;
+  }
+  .logo {
+    position: relative;
+    z-index: 5;
+  }
+  .right-header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 60%;
+    height: 100%;
+    right: -100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2rem;
+    background-color: #12122c;
+    justify-content: flex-start;
+    padding-top: 10rem;
+    gap: 3rem;
+    transition: all 0.5s ease-in-out;
+    display: none;
+    opacity: 0;
+  }
+
+  .open-head {
+    opacity: 1;
+    right: 0;
+  }
+  .nav-links {
+    font-size: 1.7rem;
+  }
+  .fa-times {
+    position: absolute;
+    left: 10%;
+    top: 4%;
+    font-size: 1.6rem;
+    overflow: visible !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo-cont {
+    max-width: 125px;
+  }
+}

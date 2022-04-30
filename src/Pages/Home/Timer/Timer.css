@@ -1,0 +1,116 @@
+.timer-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 0rem;
+  overflow: visible;
+}
+.timer-h1 {
+  color: white;
+  font-size: 6rem;
+}
+.timer-div * {
+  overflow-x: visible;
+}
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+.time-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.timer-number {
+  font-size: 10rem;
+  line-height: 0.8;
+  color: white;
+}
+.time-wrap span {
+  font-size: 2rem;
+  color: #9c8133;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.timer-dot {
+  width: 18px;
+  height: 22px;
+  background-color: #9c8133;
+  margin-bottom: 3rem;
+}
+.mint {
+  font-size: 3rem;
+  color: white;
+  border-radius: 15px;
+  border: 1px solid #9c8133;
+  background: transparent;
+  cursor: pointer;
+  padding: 20px 40px;
+}
+@media screen and (max-width: 1030px) {
+  .timer {
+    width: 100%;
+  }
+  .timer-number {
+    font-size: 6rem;
+  }
+  .time-wrap span {
+    font-size: 2rem;
+  }
+  .timer-dot {
+    width: 18px;
+    height: 22px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .timer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .timer-h1 {
+    font-size: 4rem;
+  }
+  .timer-number {
+    font-size: 4rem;
+  }
+  .time-wrap span {
+    font-size: 1.5rem;
+  }
+  .timer-dot {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 571px) {
+  .timer {
+    justify-content: center;
+    gap: 10px;
+  }
+  .timer-number {
+    font-size: 3rem;
+  }
+  .time-wrap span {
+    font-size: 1.5rem;
+  }
+  .timer-dot {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 1rem;
+  }
+  .time-wrap span {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  .timer-div {
+    padding: 1rem 0rem;
+  }
+}

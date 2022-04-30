@@ -1,0 +1,31 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 0rem;
+  overflow-x: hidden;
+}
+.slider * {
+  overflow-x: visible;
+}
+.slider-h1 {
+  font-size: 6rem;
+  color: white;
+}
+.slider-img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.splide {
+  margin: 2rem 0rem !important;
+}
+@media screen and (max-width: 571px) {
+  .slider {
+    margin: 2rem 0rem;
+  }
+  .slider-h1 {
+    font-size: 5rem;
+  }
+}
